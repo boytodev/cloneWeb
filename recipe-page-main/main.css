@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap");
+
+:root {
+    --Mobile: 375px;
+    --Desktop: 1440px;
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark-Raspberry: hsl(332, 51%, 32%);
+    --White: hsl(0, 0%, 100%);
+    --Rose-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+    --youngSerif: "Young Serif", serif;
+    --Outfit: "Outfit", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--youngSerif);
+}
+
+body p {
+    font-size: 16px;
+}
+
+.contianer {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.images img {
+    width: 100%;
+}
+
+.para {
+    margin-top: 20px;
+    & h1 {
+        font-size: 40px;
+        color: var(--Dark-Charcoal);
+    }
+
+    & p {
+        color: var(--Wenge-Brown);
+        margin: 20px 0;
+    }
+}
+
+.preparation {
+    background-color: hsla(332, 100%, 84%, 0.215);
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-family: var(--Outfit);
+
+    & h3 {
+        color: var(--Dark-Raspberry);
+    }
+
+    & p {
+        text-wrap: wrap;
+    }
+
+    & ul li {
+        color: var(--Wenge-Brown);
+        padding-left: 20px;
+        margin: 10px 0;
+    }
+}
+
+section {
+    margin: 30px 0;
+
+    & h2 {
+        color: var(--Dark-Raspberry);
+        margin: 20px 0;
+    }
+
+    & ul li,
+    ol li {
+        font-family: var(--Outfit);
+        color: var(--Wenge-Brown);
+        padding-left: 20px;
+        margin-left: 20px;
+        text-wrap: wrap;
+    }
+    & ul li::marker,
+    ol li::marker {
+        color: var(--Dark-Raspberry);
+        font-family: var(--Outfit);
+        font-weight: bold;
+    }
+
+    & p {
+        color: var(--Wenge-Brown);
+    }
+
+    & table {
+        width: 100%;
+        border-collapse: collapse;
+
+        & td {
+            text-align: left;
+            padding: 8px;
+            border-bottom: 1px solid var(--Wenge-Brown);
+            color: var(--Wenge-Brown);
+        }
+
+        & td:nth-child(even) {
+            color: var(--Dark-Raspberry);
+        }
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .para {
+        margin-top: 20px;
+        & h1 {
+            font-size: 24px;
+            color: var(--Dark-Charcoal);
+        }
+
+        & p {
+            color: var(--Wenge-Brown);
+            margin: 15px 0;
+            font-size: 12px;
+        }
+    }
+
+    .preparation {
+        background-color: hsla(332, 100%, 84%, 0.215);
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-family: var(--Outfit);
+
+        & h3 {
+            color: var(--Dark-Raspberry);
+            font-size: 18px;
+        }
+
+        & p {
+            text-wrap: wrap;
+        }
+
+        & ul li {
+            color: var(--Wenge-Brown);
+            padding-left: 20px;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+    }
+
+    section {
+        margin: 15px 0;
+
+        & h2 {
+            color: var(--Dark-Raspberry);
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        & ul li,
+        ol li {
+            font-family: var(--Outfit);
+            color: var(--Wenge-Brown);
+            padding-left: 10px;
+            margin-left: 20px;
+            text-wrap: wrap;
+            font-size: 12px;
+        }
+        & ul li::marker,
+        ol li::marker {
+            color: var(--Dark-Raspberry);
+            font-family: var(--Outfit);
+            font-weight: bold;
+        }
+
+        & p {
+            color: var(--Wenge-Brown);
+        }
+
+        & table {
+            width: 100%;
+            border-collapse: collapse;
+
+            & td {
+                text-align: left;
+                padding: 8px;
+                border-bottom: 1px solid var(--Wenge-Brown);
+                color: var(--Wenge-Brown);
+                font-size: 14px;
+            }
+
+            & td:nth-child(even) {
+                color: var(--Dark-Raspberry);
+            }
+        }
+    }
+}
